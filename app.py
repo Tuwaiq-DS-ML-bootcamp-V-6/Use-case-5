@@ -5,7 +5,7 @@ import pandas as pd
 #import dtale as dt
 #import plotly.graph_objects as go
 
-df = pd.read_csv("C:/Users/HP/Desktop/use-5/Use-case-5/Jadarat_data.csv")
+#df = pd.read_csv("C:/Users/HP/Desktop/use-5/Use-case-5/Jadarat_data.csv")
 
 st.title("  كيف تبحث عن فرصه عمل في السعودية؟ \n")
 
