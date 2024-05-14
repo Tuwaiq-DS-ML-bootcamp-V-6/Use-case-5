@@ -1,5 +1,5 @@
 import streamlit as st
-import My_Data as data
+import myconfig.My_Data as data
 
 # Intro
 st.title("هل يستاهل ننقل لمدينة الرياض عشان نتوظف؟")
