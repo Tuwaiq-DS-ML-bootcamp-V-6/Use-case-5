@@ -1,18 +1,16 @@
 import streamlit as st
 
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from scipy.stats import zscore
-import dtale
 
-from ipyvizzu import chart, Data, Config, Style
+st.text("Hello, this is a simple text.")
 
+# Markdown text
+st.markdown("""
+    ## Welcome to my Streamlit app!
 
-Jadarat_Data = pd.read_csv('Jadarat_data.csv')
+    This is a **bold** text.
 
-dtale.show(Jadarat_Data)
+    - Here's a bullet point.
+    - And another one.
 
-
-
+    [Link to Streamlit](https://streamlit.io/)
+""")
