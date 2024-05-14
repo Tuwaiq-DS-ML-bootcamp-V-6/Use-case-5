@@ -1,12 +1,8 @@
 import streamlit as st 
-import numpy as np
 import pandas as pd
-import streamlit as st
-from PIL import Image
-import plotly.express as px
 
 
-jdata = pd.read_csv('data\Jadarat_data.csv')
+jdata = pd.read_csv('https://raw.githubusercontent.com/FaisalAlossaimi/Use-case-5/main/Data/Jadarat_data.csv')
 
 
 st.image('images/—Pngtree—the young businessman walks up_5332299.png') 
