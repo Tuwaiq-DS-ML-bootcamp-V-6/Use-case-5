@@ -45,12 +45,9 @@ st.markdown("\n \n")
 
 
 st.markdown("""
-            
-            <span style='color:black; font-weight:bold;'>
-            
-            Identifying if there's a gender preference specified in job postings allows job seekers to navigate towards workplaces
+            <span style='color:black; font-weight:bold;'> Identifying if there's a gender preference specified in job postings allows job seekers to navigate towards workplaces
             that prioritize diversity and inclusion, fostering environments where all individuals have equal opportunities for employment
-            and advancement..</span>
+            and advancement.</span>
             """, unsafe_allow_html=True )
 
 
