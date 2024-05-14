@@ -6,7 +6,7 @@ import plotly.express as px
 
 
 # -- LOADING DATA
-jdata = pd.read_csv('data\Jadarat_data.csv')
+jdata = pd.read_csv('https://raw.githubusercontent.com/MohammedAlaklabi/Use-case-5/main/data/Jadarat_data.csv')
 
 
 # -- LOGO
