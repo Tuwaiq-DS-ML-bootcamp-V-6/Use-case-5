@@ -1,9 +1,9 @@
 import streamlit as st
-import numpy as np
-import plotly.express as px
+#import numpy as np
+#import plotly.express as px
 import pandas as pd
 #import dtale as dt
-import plotly.graph_objects as go
+#import plotly.graph_objects as go
 
 df = pd.read_csv("C:/Users/HP/Desktop/use-5/Use-case-5/Jadarat_data.csv")
 
