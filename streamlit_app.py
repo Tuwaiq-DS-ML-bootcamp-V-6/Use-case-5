@@ -11,13 +11,12 @@ st.markdown("""
     Jadarat.sa is a platform dedicated to fostering growth, development, 
     and empowerment. their mission is to equip individuals, organizations, 
     and communities with the skills, knowledge, and resources needed to thrive in today's dynamic world.
-    </span>.
-
+    </span>
 
 
 """, unsafe_allow_html=True)
 
-st.markdown("")
+st.markdown("\n \n")
 
 st.markdown("""
     <span style='color:black; font-weight:bold;'>
