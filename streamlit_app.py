@@ -14,3 +14,11 @@ st.markdown("""
 
     [Link to Streamlit](https://streamlit.io/)
 """)
+
+import streamlit as st
+
+
+
+# Display an image from a local file
+st.image('image-1.png', caption='image-1.png', use_column_width=True)
+
