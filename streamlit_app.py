@@ -17,7 +17,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("\n \n")
-
+st.markdown("\n \n")
 
 
 st.markdown("""
@@ -25,12 +25,13 @@ st.markdown("""
             Understanding regional job posting proportions in Saudi Arabia helps job seekers target their search efforts more effectively, 
             increasing their chances of finding relevant opportunities in areas with higher demand for their skills, 
             thus saving time and effort.</span>
-            """
-            )
+            """, unsafe_allow_html=True )
 
 st.markdown("""
     <span style='color:black; font-weight:bold;'> Q1)  What proportion of job postings is attributed to each region within the kingdom?</span>
 """, unsafe_allow_html=True)
+
+st.markdown("\n \n")
 
 # Display an image from a local file
 st.image('image-1.png', caption='image-1.png', use_column_width=True)
