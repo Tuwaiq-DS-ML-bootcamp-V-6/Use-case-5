@@ -1,6 +1,8 @@
 import streamlit as st
 
 
+st.write("if you would like to see the stream web, please copy this link: https://use-case-5-39e3nrfrxck3whxefuvujd.streamlit.app/  ")
+
 st.text("Welcome to My Streamlit website. Hope you like it!")
 
 # Markdown text
