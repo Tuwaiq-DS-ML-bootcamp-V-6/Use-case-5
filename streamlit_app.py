@@ -17,9 +17,14 @@ st.markdown("""
 
 """, unsafe_allow_html=True)
 
+st.markdown("")
+
 st.markdown("""
     <span style='color:black; font-weight:bold;'>
-    Q1)  What proportion of job postings is attributed to each region within the kingdom? </span>.
+            
+
+    Q1)  What proportion of job postings is attributed to each region within the kingdom? 
+            </span>
 """, unsafe_allow_html=True)
 
 # Display an image from a local file
