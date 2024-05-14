@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-job_data = pd.read_csv("data\Jadarat_data.csv")
+job_data = pd.read_csv("https://raw.githubusercontent.com/GoldenHamad/Use-case-5/main/Data/Jadarat_data.csv")
 
 st.title("Always Be Prepared")
 st.image('Images\Hire me.webp')
