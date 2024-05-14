@@ -122,3 +122,27 @@ st.markdown("\n \n")
 
 # Display an image from a local file
 st.image('image-5.png', caption='image-5.png', use_column_width=True)
+
+
+st.markdown("\n \n")
+st.markdown("\n \n")
+
+st.markdown("""
+    <span style='color:black; font-weight:bold;'> Q5: Which region has the highest job postings in Saudi Arabia for fresh graduates with no experience?</span>
+""", unsafe_allow_html=True)
+
+
+st.markdown("\n \n")
+
+st.markdown("""
+            <span style='color:black; font-weight:bold;'> The region that has the highest job postings in Saudi Arabia for fresh graduates with no experience is showing in the chart below </span>
+            """, unsafe_allow_html=True )
+
+
+
+st.markdown("\n \n")
+st.markdown("\n \n")
+
+
+# Display an image from a local file
+st.image('image-6.png', caption='image-6.png', use_column_width=True)
