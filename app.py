@@ -1,3 +1,15 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+pip install plotly
+
+
+# In[ ]:
+
+
 import streamlit as st
 import pandas as pd
 import plotly.graph_objs as go
@@ -73,3 +85,4 @@ st.markdown("""
 1- Employers and policymakers should capitalize on Riyadh's thriving job market by investing in infrastructure, education, and talent development initiatives to further bolster economic prosperity.
 
 2- Employers should adopt gender-neutral language in job postings and cultivate a culture of diversity and inclusion within their organizations to ensure equal opportunities for all individuals.""")
+
