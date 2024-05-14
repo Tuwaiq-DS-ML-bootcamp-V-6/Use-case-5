@@ -35,23 +35,23 @@ The data quality checks and necessary remediation steps were performed in the Ju
 The exploratory data analysis (EDA) includes various visualizations to address the questions outlined in the problem statement.
 
 ### Proportion of Job Postings by Region
-![Proportion of Job Postings by Region](Imgs\Q1-ansr.png)
+![Proportion of Job Postings by Region](Imgs/Q1-ansr.png)
 
 ### Gender Preference in Job Postings
-![Gender Preference in Job Postings](Imgs\Q2-ansr.png)
+![Gender Preference in Job Postings](Imgs/Q2-ansr.png)
 
 ### Expected Salary Range for Fresh Graduates
-![Expected Salary Range for Fresh Graduates](Imgs\Q3-ansr.png)
-![Expected Salary Range for Fresh Graduates](Imgs\Q3-ansr-part2.jpeg)
+![Expected Salary Range for Fresh Graduates](Imgs/Q3-ansr.png)
+![Expected Salary Range for Fresh Graduates](Imgs/Q3-ansr-part2.jpeg)
 
 ### Experience Level Required for Job Opportunities
-![Experience Level Required for Job Opportunities](Imgs\Q4-ansr.png)
+![Experience Level Required for Job Opportunities](Imgs/Q4-ansr.png)
 
 ## Analysis and Visualizations
 Below are some additional visualizations from the EDA:
 
 ### Salary Range by Gender
-![Salary Range by Gender](Imgs\Extra-Q.png)
+![Salary Range by Gender](Imgs/Extra-Q.png)
 
 ## Conclusion
 The analysis provides valuable insights into the job market in Saudi Arabia, highlighting regional distributions, gender preferences, salary expectations, and experience requirements for job postings. These insights can help job seekers and policymakers make informed decisions.
