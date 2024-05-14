@@ -3,11 +3,12 @@ import streamlit as st
 
 job_data = pd.read_csv("https://raw.githubusercontent.com/GoldenHamad/Use-case-5/main/Data/Jadarat_data.csv")
 
+
 st.title("Always Be Prepared")
-st.image('Images\Hire me.webp')
+st.image('https://raw.githubusercontent.com/GoldenHamad/Use-case-5/main/Images/Hire%20me.webp')
 st.write("almost 90 percent of fresh graduates have an idea of which path they want to take, but not many know of the salary they should expect when they first come to the business environment")
 st.write("with this statistic i hope to give fresh graduates an idea of the salary they should expect, and that they should probably try to bargain if they get a lower offer (if possible).")
-st.image("Images\Fresh grad salaries.png")
+st.image("https://github.com/GoldenHamad/Use-case-5/blob/63b8860b012a715860f854b1929244b2f602bf73/Images/Fresh%20grad%20salaries.png")
 st.write("")
 st.title("Conclusion")
 st.write("In Conclusion, people should expect to get salaries in the range of 4k as fresh graduates, so should'nt be too greedy and expect a lot more and they should know what to answer when they're asked "'How much do salary do you expect to get from us".')
