@@ -7,16 +7,12 @@ st.text("Welcome to My Streamlit website. Hope you like it!")
 st.markdown("""
     ## Topic: Jadarat
 
-    This is a **bold** text.
+    Jadarat.sa is a platform dedicated to fostering growth, development, 
+    and empowerment. their mission is to equip individuals, organizations, 
+    and communities with the skills, knowledge, and resources needed to thrive in today's dynamic world.
 
-    - Here's a bullet point.
-    - And another one.
 
-    [Link to Streamlit](https://streamlit.io/)
 """)
-
-import streamlit as st
-
 
 
 # Display an image from a local file
