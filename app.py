@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 # Intro
 st.title("هل يستاهل ننقل لمدينة الرياض عشان نتوظف؟")
 with st.container():
