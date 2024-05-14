@@ -18,12 +18,18 @@ st.markdown("""
 
 st.markdown("\n \n")
 
-st.markdown("""
-    <span style='color:black; font-weight:bold;'>
-            
 
-    Q1)  What proportion of job postings is attributed to each region within the kingdom? 
-            </span>
+
+st.markdown("""
+            <span style='color:black; font-weight:bold;'>
+            Understanding regional job posting proportions in Saudi Arabia helps job seekers target their search efforts more effectively, 
+            increasing their chances of finding relevant opportunities in areas with higher demand for their skills, 
+            thus saving time and effort.</span>
+            """
+            )
+
+st.markdown("""
+    <span style='color:black; font-weight:bold;'> Q1)  What proportion of job postings is attributed to each region within the kingdom?</span>
 """, unsafe_allow_html=True)
 
 # Display an image from a local file
