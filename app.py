@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 
 # Load your dataset
 df = pd.read_csv('Data/Jadarat_data.csv')
@@ -11,14 +10,7 @@ st.markdown("In the heart of Saudi Arabia lies Riyadh, a bustling hub of economi
 # Regional Distribution of Job Postings
 st.write("In Riyadh, job postings flourish, painting a vivid picture of the city's economic vitality. With Riyadh leading the charge, it's evident that the capital serves as a beacon, attracting businesses and job seekers alike. This concentration of opportunities underscores Riyadh's pivotal role as an economic and administrative powerhouse in the region.")
 st.subheader('Regional Distribution of Job Postings')
-region_counts = df['region'].value_counts().reset_index()
-region_counts.columns = ['Region', 'Job Postings']
-
-fig1 = px.bar(region_counts, x='Region', y='Job Postings',
-              title='Number of Job Postings by Region',
-              labels={'Job Postings':'Number of Job Postings', 'Region':'Region'},
-              template='plotly_white')
-st.plotly_chart(fig1)
+st.image("C:\Users\kacst\Desktop\Use-case-5\image1.png", use_column_width=True)
 
 st.markdown("""
 ### Insight:
@@ -28,14 +20,8 @@ Riyadh leads in job postings, indicating a strong job market in the capital. Thi
 # Gender Preference in Job Postings
 st.write("In the realm of job postings, gender preferences occasionally surface, reflecting societal norms and industry traditions. While the majority of postings remain neutral in their gender specifications, there's a subtle undercurrent that warrants attention. Despite strides towards inclusivity, gender biases persist in certain sectors, influencing hiring practices and candidate preferences.")
 st.subheader('Gender Preference in Job Postings')
-gender_counts = df['gender'].value_counts().reset_index()
-gender_counts.columns = ['Gender', 'Job Postings']
+st.image("C:\Users\kacst\Desktop\Use-case-5\image2.png", use_column_width=True)
 
-fig2 = px.pie(gender_counts, values='Job Postings', names='Gender',
-              title='Gender Preference in Job Postings',
-              template='plotly_white',
-              hole=0.3)
-st.plotly_chart(fig2)
 
 st.markdown("""
 ### Insight:
