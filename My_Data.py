@@ -48,7 +48,7 @@ def draw_most_jobs():
 
     fig.update_traces(marker_color='skyblue')  
     fig.show()
-draw_most_jobs()
+
 def draw_freshers_jobs():
     df = get_data()  
     fig = px.pie(df, names='region', title='توزيع وظائف الخريجين على المناطق')
