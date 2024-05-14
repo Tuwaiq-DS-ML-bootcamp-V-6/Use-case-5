@@ -135,7 +135,7 @@ st.markdown("""
 st.markdown("\n \n")
 
 st.markdown("""
-            <span style='color:black; font-weight:bold;'> The region that has the highest job postings in Saudi Arabia for fresh graduates with no experience is showing in the chart below </span>
+            <span style='color:black; font-weight:bold;'> The region that has the highest job postings in Saudi Arabia for fresh graduates with no experience is shown in the chart below. </span>
             """, unsafe_allow_html=True )
 
 
