@@ -5,7 +5,7 @@ import pandas as pd
 jdata = pd.read_csv('https://raw.githubusercontent.com/FaisalAlossaimi/Use-case-5/main/Data/Jadarat_data.csv')
 
 
-st.image('blob:https://github.com/80018d09-7f5a-4444-b378-9db1e5cfbc4a') 
+st.image('https://github.com/80018d09-7f5a-4444-b378-9db1e5cfbc4a') 
 
 
 st.title('Know more of your dream careers')
