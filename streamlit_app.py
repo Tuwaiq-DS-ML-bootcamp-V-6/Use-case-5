@@ -7,11 +7,13 @@ st.text("Welcome to My Streamlit website. Hope you like it!")
 st.markdown("""
     ## Topic: Jadarat
 
-    This is a <span style='color:black; font-weight:bold;'>bold and black text</span>.
-
+    This is a <span style='color:black; font-weight:bold;'>
     Jadarat.sa is a platform dedicated to fostering growth, development, 
     and empowerment. their mission is to equip individuals, organizations, 
     and communities with the skills, knowledge, and resources needed to thrive in today's dynamic world.
+            
+            </span>.
+
 
 
 """, unsafe_allow_html=True)
