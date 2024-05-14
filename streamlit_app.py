@@ -1,11 +1,11 @@
 import streamlit as st
 
 
-st.text("Hello, this is a simple text.")
+st.text("Welcome to My Streamlit website. Hope you like it!")
 
 # Markdown text
 st.markdown("""
-    ## Welcome to my Streamlit app!
+    ## Topic: Jadarat
 
     This is a **bold** text.
 
