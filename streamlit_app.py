@@ -97,3 +97,28 @@ st.markdown("\n \n")
 
 # Display an image from a local file
 st.image('image-3.png', caption='image-3.png', use_column_width=True)
+
+
+
+st.markdown("\n \n")
+st.markdown("\n \n")
+
+st.markdown("""
+    <span style='color:black; font-weight:bold;'> Q4: Are job opportunities predominantly targeted at individuals with experience, or is there room for fresh graduates as well?</span>
+""", unsafe_allow_html=True)
+
+
+st.markdown("\n \n")
+
+st.markdown("""
+            <span style='color:black; font-weight:bold;'> Based on the chart below it's targeting fresh graduates with no prior experience.</span>
+            """, unsafe_allow_html=True )
+
+
+
+st.markdown("\n \n")
+st.markdown("\n \n")
+
+
+# Display an image from a local file
+st.image('image-5.png', caption='image-5.png', use_column_width=True)
