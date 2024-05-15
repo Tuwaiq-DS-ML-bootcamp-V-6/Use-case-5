@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
 import numpy as np
+import os
 
 
 ##################################################
@@ -55,7 +56,6 @@ def sal_rang(df):
         showlegend=False
     ))
 
-    #plotting
     fig.update_layout(
         xaxis_title='Years of Experience',
         yaxis_title='Salary Range',
@@ -96,9 +96,17 @@ def best_region(df):
 jadarat_df = pd.read_csv("https://raw.githubusercontent.com/Sulaiman-F-Alharbi/Use-case-5/main/Data/Jadarat_clean.csv")
 
 st.title("Finding the best job opportunities in Saudi Arabia")
-st.image("Imgs\logo.jpg")
+
+image_path = "Imgs/logo.jpg"
+if os.path.exists(image_path):
+    st.image(image_path)
+else:
+    st.error(f"Image file not found: {image_path}")
+
 st.markdown("Many people find it difficult to find a job, especially if you new to the job business like newly graduated senior students where many of them face anxiety  and don't know what the current market need.")
 st.markdown("Since it is a big issue I decided to gather some publicly available datasets that focus on Saudi Arabia's job market and see what is the shape of the current market, and learn together the trends and the needs of the market, to make it easier for people to decide what they choose, based on region, salary and gender.")
+
+
 
 st.title("Where to work?")
 st.markdown("Saudi Arabia is considered a big country especially if you compare it by it's neighbors, which means that you could find job opportunities all over the kingdom but that doesn't mean you will have the same chance in 2 different cities, and we can see that from the below graph:")
@@ -168,6 +176,8 @@ st.markdown("""Gender preferences in job opportunities can stem from a variety o
              Understanding these factors helps explain why certain jobs may lean towards one gender over the other.""")
 st.write("And we can see that from the following graph.")
 job_gender(jadarat_df)
+
+
 
 
 st.title("Conclusion")
