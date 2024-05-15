@@ -57,13 +57,26 @@ def main():
 
     st.write('The bar chart above shows the average salary levels across different regions in Saudi Arabia, providing insights into regional disparities in salary levels.')
     
-    st.markdown("# Filter Job Opportunities:")
-    selected_regions = st.multiselect("Select regions", df['region'].unique())
-    selected_job_titles = st.multiselect("Select job titles", df['job_title'].unique())
-
-    filtered_df = df[(df['region'].isin(selected_regions)) & (df['job_title'].isin(selected_job_titles))]
+    # Add a sidebar section for filtering
+    st.sidebar.header('Filter Opportunities')
     
-    st.subheader('Filtered Job Opportunities')
+    # Job title filter
+    selected_job_title = st.sidebar.selectbox('Select Job Title', df['job_title'].unique())
+
+    # Region filter
+    selected_region = st.sidebar.selectbox('Select Region', df['region'].unique())
+
+    # Gender filter
+    selected_gender = st.sidebar.selectbox('Select Gender', df['gender'].unique())
+
+    # Experience filter
+    selected_experience = st.sidebar.slider('Select Years of Experience', df['exper'].unique())
+
+    # Filter the data based on user selections
+    filtered_df = df[(df['job_title'] == selected_job_title) & (df['region'] == selected_region) & (df['gender'] == selected_gender) & (df['exper'] == selected_experience)]
+
+    # Display the filtered data
+    st.subheader('Available Opportunities')
     st.write(filtered_df)
 
 
