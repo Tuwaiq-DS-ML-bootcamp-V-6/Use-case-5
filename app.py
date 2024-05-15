@@ -56,6 +56,15 @@ def main():
     st.plotly_chart(bar_chart)
 
     st.write('The bar chart above shows the average salary levels across different regions in Saudi Arabia, providing insights into regional disparities in salary levels.')
+    
+    st.markdown("# Filter Job Opportunities:")
+    selected_regions = st.multiselect("Select regions", df['region'].unique())
+    selected_job_titles = st.multiselect("Select job titles", df['job_title'].unique())
+
+    filtered_df = df[(df['region'].isin(selected_regions)) & (df['job_title'].isin(selected_job_titles))]
+    
+    st.subheader('Filtered Job Opportunities')
+    st.write(filtered_df)
 
 
 if __name__ == '__main__':
