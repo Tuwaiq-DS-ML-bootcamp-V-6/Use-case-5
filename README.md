@@ -1,7 +1,7 @@
 # Saudi Arabia Job Postings Analysis
 
 ## Streamlit
-If you want to see the data in more detail you can visit my [Website]((https://use-case-5-5a8hdab4kaujwjk8zfpe8x.streamlit.app/))
+If you want to see the data in more detail you can visit my website <a href="https://use-case-5-5a8hdab4kaujwjk8zfpe8x.streamlit.app/" target="_blank">HERE</a>
 
 ## Overview
 This project aims to analyze job postings in Saudi Arabia to understand various aspects of the employment landscape, such as the distribution of job postings by region, gender preference, salary expectations for fresh graduates, and the experience level required for job opportunities.
