@@ -9,7 +9,7 @@ def main():
     st.write("Welcome to the Employment Insights data story, where we explore the landscape of job opportunities in Saudi Arabia. This analysis delves into a dataset containing information about various job titles, companies, qualifications, salaries, and more. By examining this data, we aim to uncover valuable insights into the employment market in Saudi Arabia.")
     
     # Load the data
-    df = pd.read_csv('Data/Jadarat_cleaned_data.csv') 
+    df = pd.read_csv('Data/Jadarat_cleaned_data.csv', index_col=False)
 
     # Calculate the top 10 job titles
     top_10_job_titles = df['job_title'].value_counts().nlargest(10).index.tolist()
