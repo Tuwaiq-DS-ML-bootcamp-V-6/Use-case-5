@@ -12,18 +12,11 @@ def main():
     st.subheader('Data Sample')
     st.write(df)
     
-    
+    # Create a bar chart
     bar_chart = px.bar(df, x='job_title', title='Job Titles Distribution')
-    bar_chart.show()
 
-    
-    
-    
+    # Display the bar chart using st.plotly_chart
+    st.plotly_chart(bar_chart)
 
-    
-    
-      
-
- 
 if __name__ == '__main__':
     main()
