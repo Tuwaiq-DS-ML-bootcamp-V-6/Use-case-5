@@ -36,21 +36,14 @@ def main():
     
     st.write('The bar chart above shows the distribution of the top 10 job titles in Saudi Arabia. It is evident that some job titles are more common than others such as "بائع" and "محاسب", providing insights into the most sought-after roles in the job market.')
     
+    # Create a scatter plot for Experience vs. Salary
+    scatter_chart = px.scatter(df, x='exper', y='salary', title='Experience vs. Salary',
+                               labels={'exper': 'Years of Experience', 'salary': 'Salary'})
     
-    # Aggregate the data to get the mean salary for each years of experience
-    df_mean_salary = df_top_10.groupby('exper')['salary'].mean().reset_index()
-
-    # Sort the data by years of experience
-    df_mean_salary_sorted = df_mean_salary.sort_values('exper')
-
-    # Create a line plot for Experience vs. Salary
-    line_chart = px.line(df_mean_salary_sorted, x='exper', y='salary', title='Experience vs. Average Salary',
-                         labels={'exper': 'Years of Experience', 'salary': 'Average Salary'})
+    # Display the scatter plot
+    st.plotly_chart(scatter_chart)
     
-    # Display the line plot
-    st.plotly_chart(line_chart)
-    
-    st.write('The line plot above shows the relationship between years of experience and average salary levels in Saudi Arabia. It provides insights into how average salary levels change with increasing experience across different job roles.')
+    st.write('The scatter plot above shows the relationship between years of experience and salary levels in Saudi Arabia. It can provide insights into how salary levels vary with experience across different job roles.')
 
 if __name__ == '__main__':
     main()
