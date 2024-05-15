@@ -61,16 +61,16 @@ def main():
     st.markdown("## Filter Job Opportunities:")
     
     # Job title filter
-    selected_job_title = st.sidebar.multiselect('Select Job Title', df['job_title'].unique())
+    selected_job_title = st.multiselect('Select Job Title', df['job_title'].unique())
 
     # Region filter
-    selected_region = st.sidebar.multiselect('Select Region', df['region'].unique())
+    selected_region = st.multiselect('Select Region', df['region'].unique())
 
     # Gender filter
-    selected_gender = st.sidebar.multiselect('Select Gender', df['gender'].unique())
+    selected_gender = st.multiselect('Select Gender', df['gender'].unique())
 
     # Experience filter
-    selected_experience = st.sidebar.multiselect('Select Years of Experience', df['exper'].unique())
+    selected_experience = st.multiselect('Select Years of Experience', df['exper'].unique())
 
     # Filter the data based on user selections
     filtered_df = df[(df['region'].isin(selected_region)) & (df['job_title'].isin(selected_job_title)) & (df['gender'].isin(selected_gender)) & (df['exper'].isin(selected_experience))]
