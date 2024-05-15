@@ -47,6 +47,8 @@ def main():
     
     # Calculate average salary by region
     df_mean_salary_region = df.groupby('region')['salary'].mean().reset_index()
+        
+    df_mean_salary_region = df_mean_salary_region.sort_values('salary', ascending=False)
 
     # Create a bar chart for Average Salary by Region
     bar_chart = px.bar(df_mean_salary_region, x='region', y='salary', title='Average Salary by Region',
