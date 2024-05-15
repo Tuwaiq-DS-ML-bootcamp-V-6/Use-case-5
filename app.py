@@ -20,12 +20,16 @@ def main():
     # Aggregate the data to get the sum of counts for each job title
     df_agg = df_top_10.groupby('job_title').size().reset_index(name='count')
 
+    # Sort the aggregated data by count
+    df_agg_sorted = df_agg.sort_values('count', ascending=False)
+
     # Display the raw data
     st.subheader('Data Sample')
     st.write(df)
     
     # Create a bar chart
-    bar_chart = px.bar(df_agg, x='job_title', y='count', title='Top 10 Job Titles Distribution')
+    bar_chart = px.bar(df_agg_sorted, x='job_title', y='count', title='Top 10 Job Titles Distribution',
+                       category_orders={'job_title': df_agg_sorted['job_title']})
 
     # Display the bar chart using st.plotly_chart
     st.plotly_chart(bar_chart)
