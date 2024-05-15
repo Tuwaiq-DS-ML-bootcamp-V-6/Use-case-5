@@ -18,11 +18,11 @@ def main():
     df_top_10 = df[df['job_title'].isin(top_10_job_titles)]
 
     # Aggregate the data to get the sum of counts for each job title
-    df_agg = df_top_10.groupby('job_title').size().reset_index(name='count')
+    df_agg = df_top_10.groupby('job_title').size().reset_index(name='count', drop=True)
 
     # Display the raw data
     st.subheader('Data Sample')
-    st.write(df.reset_index(drop=True))
+    st.write(df)
     
     # Create a bar chart
     bar_chart = px.bar(df_agg, x='job_title', y='count', title='Top 10 Job Titles Distribution')
