@@ -1,5 +1,8 @@
 # Saudi Arabia Job Postings Analysis
 
+## Streamlit
+If you want to see the data in more detail you can visit my [Website]([readme.com](https://use-case-5-5a8hdab4kaujwjk8zfpe8x.streamlit.app/))
+
 ## Overview
 This project aims to analyze job postings in Saudi Arabia to understand various aspects of the employment landscape, such as the distribution of job postings by region, gender preference, salary expectations for fresh graduates, and the experience level required for job opportunities.
 
@@ -52,6 +55,9 @@ Below are some additional visualizations from the EDA:
 
 ### Salary Range by Gender
 ![Salary Range by Gender](Imgs/Extra-Q.png)
+
+### What are the top job opportunities for men and women?
+![What are the top job opportunities for men and women?](Imgs\Extra-Q2.png)
 
 ## Conclusion
 The analysis provides valuable insights into the job market in Saudi Arabia, highlighting regional distributions, gender preferences, salary expectations, and experience requirements for job postings. These insights can help job seekers and policymakers make informed decisions.
