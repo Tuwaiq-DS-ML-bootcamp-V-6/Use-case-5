@@ -44,6 +44,19 @@ def main():
     st.plotly_chart(scatter_chart)
     
     st.write('The scatter plot above shows the relationship between years of experience and salary levels in Saudi Arabia. It can provide insights into how salary levels vary with experience across different job roles.')
+    
+    # Calculate average salary by region
+    df_mean_salary_region = df.groupby('region')['salary'].mean().reset_index()
+
+    # Create a bar chart for Average Salary by Region
+    bar_chart = px.bar(df_mean_salary_region, x='region', y='salary', title='Average Salary by Region',
+                       labels={'region': 'Region', 'salary': 'Average Salary'})
+
+    # Display the bar chart
+    st.plotly_chart(bar_chart)
+
+    st.write('The bar chart above shows the average salary levels across different regions in Saudi Arabia, providing insights into regional disparities in salary levels.')
+
 
 if __name__ == '__main__':
     main()
