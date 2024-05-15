@@ -58,7 +58,7 @@ def main():
     st.write('The bar chart above shows the average salary levels across different regions in Saudi Arabia, providing insights into regional disparities in salary levels.')
     
     # Add a sidebar section for filtering
-    st.markdown("## Filter Job Opportunities:")
+    st.markdown("## Search for Job Opportunities:")
     
     # Job title filter
     selected_job_title = st.multiselect('Select Job Title', df['job_title'].unique())
@@ -78,6 +78,14 @@ def main():
     # Display the filtered data
     st.subheader('Available Opportunities')
     st.write(filtered_df)
+    
+    st.markdown("# Conclusion:")
+    st.write("In conclusion, this data analysis provides valuable insights into the employment market in Saudi Arabia. By examining job titles, salaries, and regional disparities, we gain a better understanding of the job opportunities available in the country.")
+    st.write("1- 'بائع' and 'محاسب' are more common than other job titles.")
+    st.write("2- There are a lot of jobs with salary within the range of 5-10k.")
+    st.write("3- The highest average salary level is in 'الحدود الشمالية', 'حايل' and 'تبوك'." )
+
+
 
 
 if __name__ == '__main__':
