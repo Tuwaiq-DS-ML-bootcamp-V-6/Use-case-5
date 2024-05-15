@@ -6,7 +6,8 @@ def main():
     st.title('Employment Insights in Saudi Arabia')
     
     st.markdown("# Introduction :")
-    st.write("Welcome to the Employment Insights data story, where we explore the landscape of job opportunities in Saudi Arabia. This analysis delves into a dataset containing information about various job titles, companies, qualifications, salaries, and more. By examining this data, we aim to uncover valuable insights into the employment market in Saudi Arabia.")
+    with st.frame():
+        st.write("Welcome to the Employment Insights data story, where we explore the landscape of job opportunities in Saudi Arabia. This analysis delves into a dataset containing information about various job titles, companies, qualifications, salaries, and more. By examining this data, we aim to uncover valuable insights into the employment market in Saudi Arabia.")
     
     # Load the data
     df = pd.read_csv('Data/Jadarat_cleaned_data.csv') 
@@ -29,6 +30,9 @@ def main():
 
     # Display the bar chart using st.plotly_chart
     st.plotly_chart(bar_chart)
+    
+    st.write('The bar chart above shows the distribution of the top 10 job titles in Saudi Arabia. It is evident that some job titles are more common than others such as "بائع" and "محاسب", providing insights into the most sought-after roles in the job market.')
+
 
 if __name__ == '__main__':
     main()
