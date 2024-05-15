@@ -14,3 +14,11 @@ st.write("From bustling metropolises like Riyadh, Jeddah, and Dammam to emerging
 image = Image.open('regions.jpg')
 
 st.image(image, caption='')
+
+st.write("When considering job opportunities in Saudi Arabia, salary is a key factor that job seekers are interested in. Salaries in Saudi Arabia vary based on several factors, including level of experience, qualifications, job type, and the sector the company belongs to.")
+
+image = Image.open('Salary.jpg')
+
+st.image(image, caption='')
+
+
