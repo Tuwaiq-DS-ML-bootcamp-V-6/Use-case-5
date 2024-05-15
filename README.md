@@ -5,6 +5,7 @@
 This project is useful for students and professionals interested in analyzing employment trends and labor market dynamics in Saudi Arabia. The data can help identify areas of job growth, analyze required skills and qualifications, and assess gender representation. The dataset can also be beneficial for policymakers looking to promote job creation and economic growth. With this dataset, users can conduct research projects, generate data insights, and develop innovative solutions to employment challenges in Saudi Arabia.
 
 [Explore the app](https://reyadgh-5.streamlit.app/)
+[Explore the repo](https://github.com/ReyadGH/use-case-5-deployment)
 
 ## Questions
 
