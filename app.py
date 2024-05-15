@@ -69,8 +69,8 @@ def sal_rang(df):
 
 
 #writing the actual streamlit app
-st.write('Hello world!')
+st.title("Finding the best job opportunities")
 
-jadarat_df = pd.read_csv("Data\Jadarat_clean.csv")
+jadarat_df = pd.read_csv("https://raw.githubusercontent.com/Sulaiman-F-Alharbi/Use-case-5/main/Data/Jadarat_clean.csv")
 
 sal_rang(jadarat_df)
