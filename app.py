@@ -14,12 +14,15 @@ def main():
     # Filter the DataFrame to include only the top 10 job titles
     df_top_10 = df[df['job_title'].isin(top_10_job_titles)]
 
+    # Aggregate the data to get the sum of counts for each job title
+    df_agg = df_top_10.groupby('job_title').size().reset_index(name='count')
+
     # Display the raw data
     st.subheader('Data Sample')
-    st.write(df_top_10)
+    st.write(df_agg)
     
     # Create a bar chart
-    bar_chart = px.bar(df_top_10, x='job_title', title='Top 10 Job Titles Distribution')
+    bar_chart = px.bar(df_agg, x='job_title', y='count', title='Top 10 Job Titles Distribution')
 
     # Display the bar chart using st.plotly_chart
     st.plotly_chart(bar_chart)
