@@ -83,7 +83,7 @@ def main():
     st.write("In conclusion, this data analysis provides valuable insights into the employment market in Saudi Arabia. By examining job titles, salaries, and regional disparities, we gain a better understanding of the job opportunities available in the country.")
     st.write("1- 'بائع' and 'محاسب' are more common than other job titles.")
     st.write("2- There are a lot of jobs with salary within the range of 5-10k.")
-    st.write("3- The highest average salary level is in 'الحدود الشمالية', 'حايل' and 'تبوك'." )
+    st.write("3- The highest average salary level is in 'الحدود الشمالية'then 'حايل and 'تبوك'." )
 
 
 
