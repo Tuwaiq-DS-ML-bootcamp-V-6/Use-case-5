@@ -6,8 +6,7 @@ def main():
     st.title('Employment Insights in Saudi Arabia')
     
     st.markdown("# Introduction :")
-    with st.frame():
-        st.write("Welcome to the Employment Insights data story, where we explore the landscape of job opportunities in Saudi Arabia. This analysis delves into a dataset containing information about various job titles, companies, qualifications, salaries, and more. By examining this data, we aim to uncover valuable insights into the employment market in Saudi Arabia.")
+    st.write("Welcome to the Employment Insights data story, where we explore the landscape of job opportunities in Saudi Arabia. This analysis delves into a dataset containing information about various job titles, companies, qualifications, salaries, and more. By examining this data, we aim to uncover valuable insights into the employment market in Saudi Arabia.")
     
     # Load the data
     df = pd.read_csv('Data/Jadarat_cleaned_data.csv') 
