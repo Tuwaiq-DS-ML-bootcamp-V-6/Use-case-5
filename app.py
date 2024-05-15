@@ -73,7 +73,7 @@ def main():
     selected_experience = st.sidebar.multiselect('Select Years of Experience', df['exper'].unique())
 
     # Filter the data based on user selections
-    filtered_df = df[(df['job_title'] == selected_job_title) & (df['region'] == selected_region) & (df['gender'] == selected_gender) & (df['exper'] == selected_experience)]
+    filtered_df = df[(df['region'].isin(selected_region)) & (df['job_title'].isin(selected_job_title)) & (df['gender'].isin(selected_gender)) & (df['exper'].isin(selected_experience))]
 
     # Display the filtered data
     st.subheader('Available Opportunities')
