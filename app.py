@@ -5,6 +5,9 @@ import plotly.express as px
 def main():
     st.title('Employment Insights in Saudi Arabia')
     
+    st.markdown("# Introduction :")
+    st.write("Welcome to the Employment Insights data story, where we explore the landscape of job opportunities in Saudi Arabia. This analysis delves into a dataset containing information about various job titles, companies, qualifications, salaries, and more. By examining this data, we aim to uncover valuable insights into the employment market in Saudi Arabia.")
+    
     # Load the data
     df = pd.read_csv('Data/Jadarat_cleaned_data.csv') 
 
@@ -19,7 +22,7 @@ def main():
 
     # Display the raw data
     st.subheader('Data Sample')
-    st.write(df_agg)
+    st.write(df)
     
     # Create a bar chart
     bar_chart = px.bar(df_agg, x='job_title', y='count', title='Top 10 Job Titles Distribution')
