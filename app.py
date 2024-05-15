@@ -58,19 +58,19 @@ def main():
     st.write('The bar chart above shows the average salary levels across different regions in Saudi Arabia, providing insights into regional disparities in salary levels.')
     
     # Add a sidebar section for filtering
-    st.sidebar.header('Filter Opportunities')
+    st.markdown("## Filter Job Opportunities:")
     
     # Job title filter
-    selected_job_title = st.sidebar.selectbox('Select Job Title', df['job_title'].unique())
+    selected_job_title = st.sidebar.multiselect('Select Job Title', df['job_title'].unique())
 
     # Region filter
-    selected_region = st.sidebar.selectbox('Select Region', df['region'].unique())
+    selected_region = st.sidebar.multiselect('Select Region', df['region'].unique())
 
     # Gender filter
-    selected_gender = st.sidebar.selectbox('Select Gender', df['gender'].unique())
+    selected_gender = st.sidebar.multiselect('Select Gender', df['gender'].unique())
 
     # Experience filter
-    selected_experience = st.sidebar.slider('Select Years of Experience', df['exper'].unique())
+    selected_experience = st.sidebar.multiselect('Select Years of Experience', df['exper'].unique())
 
     # Filter the data based on user selections
     filtered_df = df[(df['job_title'] == selected_job_title) & (df['region'] == selected_region) & (df['gender'] == selected_gender) & (df['exper'] == selected_experience)]
